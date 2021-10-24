@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body style="border: 1px solid black; margin: auto;">
+    <header style="background-color: gainsboro;">
+        <nav style="align-items: center; padding-top: 1px; border-bottom: black;" >
+            <p style="text-align: center; margin: 0px; padding: 0px;"><b>A Web Page</b></p>
+            <div style="display: flex; align-items: center;">
+                <ul style="margin-right: 20px; display: flex; list-style: ; none; gap: 5px;">
+                    <li>
+                        <input style="width: 900px; height: 20px;" name="search" id="search" class="search" placeholder="http://">
+                    </li>
+                    <li style="padding-right: 10px; display: flex;list-style-type: none">
+                       <button style="width: 100px ; height: 25px" class="search-btn" type="button">search</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul style="display: flex; list-style-type: none; border: 1px solid black; gap: 10px"></ul>
+    </header>
+</body>
+<body bgcolor="silver">
+    <div style="background-color: white;">
+        <table style="width: 900px;">
+            <tr>
+                <td>Home |</td>
+                <td>Generate Link |</td>
+                <td>Transaction History |</td>
+                <td>Policyc |</td>
+                <td>logout |</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div style="display: flex; margin-left: 0px;">
+        <div>
+            <img src="Diagonal-two-ways.jpg" alt="style" width="200px ; height: 200px">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="photo">
+            </form>
+        </div>
+        <div style="margin-left: 50px;">
+        <form action="upload.php" method="post">
+         <table style="height: 450px;">
+            <td>Title here :</td>
+            <td>
+            <input type="text" style="width: 250px;" placeholder="Title here">
+            </td>
+            <tr>
+                <td>Description :</td>
+                <td>
+                    <textarea name="desc" id="desc" cols="30" rows="5" placeholder="Description"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Bank :</td>
+                <td><input type="text" list="Bank">
+                    <datalist id="Bank" name="Bank">
+                        <option value="BCA"></option>
+                        <option value="BNI"></option>
+                        <option value="BRI"></option>
+                        <option value="Mandiri"></option>
+                        <option value="CIMB"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td><input type="text"placeholder="Account Holder"></td>
+            </tr>
+            <tr>
+                <td><label for="transaction">Transaction :</label></td>
+                <td>
+                    <input type="number" id="transaction">
+                    <datalist id="transaction" name="transaction">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </datalist>
+                </td>
+            </tr>
+        </table>
+        </form>
+</body>
+<body>
+    <dd>
+        <div>
+            *if the transaction for 3 person, choose 3 from the dropdown list
+            <form action="">
+                <dd style="color: green;">
+                    <input type="checkbox" id="send1" name="send1" value="send1">
+                    <label for="send1">Send to mobile phone</label><br>
+                    <input type="checkbox" id="send2" name="send2" value="send2">
+                    <label for="send2">Send to emil</label><br>
+        </div>
+    </dd>
+</body>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Send to mobile phone :</td>
+                <td><input type="text" placeholder="send to mobile phone"></td>
+            </tr>
+            <tr>
+                <td>Send to email</td>
+                <td><input type="email" placeholder="send to email"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+    <p>
+        <input type="submit" value="Generate Link" style="width: 150px; color: white; background-color: green; margin-left: 167px; text-align: center;">
+    </p>
+</html>
